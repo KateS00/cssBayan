@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #fff;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.title{
+    text-align: left;
+}
+ .mems {
+    margin: 20px auto;
+
+ }
+ .mem-item {
+    border: 1px solid #808080;
+    border-right-style: none;
+    border-left-style: none;
+    margin-bottom: 5px;
+ }
+ .mem1-title{
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+ }
+ .mem-input{
+    width: 0px;
+    height: 0px;
+    appearance: none;
+    position: absolute;
+ }
+ .mem-input:checked + .mem1-img {
+    display: block;
+ }
+ .mem1-img {
+    display: none;
+    padding: 15px 15px;
+ }
+ .mem_1 {
+    width: 670px;
+    height:350px;
+    display:block;
+    margin:auto;
+ }
+ .mem2-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+ }
+ .mem_2 {
+    width: 670px;
+    height:350px;
+    display:block;
+    margin:auto;
+ }
