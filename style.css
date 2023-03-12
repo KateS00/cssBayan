@@ -1,111 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #fff;
-    box-sizing: border-box;
-    max-width: 90%;
-    padding-left: 15%;
-    padding-right: 15%;
+   font-family: Arial, sans-serif;
+   line-height: 1.5;
+   background-color: #fff;
+   box-sizing: border-box;
+   max-width: 90%;
+   padding-left: 15%;
+   padding-right: 15%;
+   font-size: 16px;
 }
-.title{
-    text-align: left;
-}
- .mems {
-    margin: 10% auto;
 
- }
- .mem-item {
-    border: 0.07em solid #808080;
-    border-right-style: none;
-    border-left-style: none;
-    margin-bottom: 3%;
- }
- .icon1 {
+img {
+   padding: 1rem;
+}
+
+.title {
+   text-align: left;
+}
+
+.mems {
+   margin: 10% auto;
+}
+
+.mem-item {
+   position: relative;
+   border-right-style: none;
+   border-left-style: none;
+   margin-bottom: 3%;
+   cursor: pointer;
+}
+
+.mem1-title {
+   border-bottom: .1rem solid #000000;
+}
+
+.icon1 {
    position: absolute;
-   left: 74%;
-   /* opacity: 0; */
+   right: 5%;
+   top: 15px;
+   opacity: 0;
    transition: .3s;
    transform: rotate(45deg);
-   
- }
- .icon1:hover {
-   transform: rotate(45deg);
- }
- .mem1-title{
-    display: block;
-    cursor: pointer;
-    padding: 5%;
- }
- .mem-input{
-    width: 0%;
-    height: 0%;
-    appearance: none;
-    position: absolute;
- }
- .mem-input:checked + .mem1-img {
-    display: block;
- }
- .mems:hover .icon1 {
+}
+
+.mems:hover .icon1 {
    opacity: 1;
- }
- .mem-input:checked + .icon1 {
-   transform: rotate(45deg);
 }
- .mem1-img {
-    display: none;
-    padding: 5% 5%;
- }
- .mem_1 {
-    width: 90%;
-    height: 30%;
-    display:block;
-    margin:auto;
- }
- .icon2 {
-   position: absolute;
-   left: 74%;
-   opacity: 0;
- }
- .mem2-title {
-    display: block;
-    cursor: pointer;
-    padding: 5% 5%;
- }
- .mem_2 {
-    width: 90%;
-    height: 30%;
-    display:block;
-    margin:auto;
- }
- .icon3 {
-   position: absolute;
-   left: 74%;
-   opacity: 0;
- }
- .mem3-title {
+
+.mem1-title {
    display: block;
+   font-weight: 700;
    cursor: pointer;
-   padding: 5% 5%;
+   padding: 1rem .5rem .5rem .5rem;
+   transition: .3s ease-in-out;
 }
-.mem_3 {
+
+.mems:hover .mem1-title {
+   color: rgb(1, 121, 81);
+}
+
+.mem-input {
+   width: 0%;
+   height: 0%;
+   appearance: none;
+   position: absolute;
+}
+
+.mem1-img {
+   height: 0;
+   padding: .9rem;
+}
+
+.mem-input:checked+.mem1-img {
+   height: auto;
+}
+
+.mem-input:checked+.mem1-img .icon1 {
+   transform: translate(0);
+}
+
+.mem-input:checked+.mem1-img .mem1-title {
+   color: #000000;
+}
+
+.mem-item:hover .mem1-img {
+   height: auto;
+}
+
+.icon2 {
+   position: absolute;
+   left: 74%;
+}
+
+.mem_3,
+.mem_4,
+.mem_2,
+.mem_1 {
    width: 90%;
    height: 30%;
-   display:block;
-   margin:auto;
-}
-.icon4 {
-   position: absolute;
-   left: 74%;
-   opacity: 0;
- }
-.mem4-title {
    display: block;
-   cursor: pointer;
-   padding: 5% 5%;
+   margin: auto;
 }
-.mem_4 {
-   width: 90%;
-   height: 30%;
-   display:block;
-   margin:auto;
+
+.mems:hover .icon1 {
+   opacity: 1;
 }
