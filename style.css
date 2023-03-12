@@ -15,10 +15,21 @@ body {
 
  }
  .mem-item {
-    border: 1px solid #808080;
+    border: 0.07em solid #808080;
     border-right-style: none;
     border-left-style: none;
     margin-bottom: 3%;
+ }
+ .icon1 {
+   position: absolute;
+   left: 74%;
+   /* opacity: 0; */
+   transition: .3s;
+   transform: rotate(45deg);
+   
+ }
+ .icon1:hover {
+   transform: rotate(45deg);
  }
  .mem1-title{
     display: block;
@@ -34,6 +45,12 @@ body {
  .mem-input:checked + .mem1-img {
     display: block;
  }
+ .mems:hover .icon1 {
+   opacity: 1;
+ }
+ .mem-input:checked + .icon1 {
+   transform: rotate(45deg);
+}
  .mem1-img {
     display: none;
     padding: 5% 5%;
@@ -43,6 +60,11 @@ body {
     height: 30%;
     display:block;
     margin:auto;
+ }
+ .icon2 {
+   position: absolute;
+   left: 74%;
+   opacity: 0;
  }
  .mem2-title {
     display: block;
@@ -55,6 +77,11 @@ body {
     display:block;
     margin:auto;
  }
+ .icon3 {
+   position: absolute;
+   left: 74%;
+   opacity: 0;
+ }
  .mem3-title {
    display: block;
    cursor: pointer;
@@ -66,6 +93,11 @@ body {
    display:block;
    margin:auto;
 }
+.icon4 {
+   position: absolute;
+   left: 74%;
+   opacity: 0;
+ }
 .mem4-title {
    display: block;
    cursor: pointer;
